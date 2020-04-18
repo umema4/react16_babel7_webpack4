@@ -1,0 +1,66 @@
+{
+  "name": "yourbest",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --mode development",
+    "build": "webpack --mode production",
+    "eslint": "eslint ./src",
+    "eslint:fix": "eslint --fix ./src",
+    "stylelint": "stylelint  ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "npm run eslint",
+    "*.css": "npm run stylelint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umema4/yourbest.git"
+  },
+  "author": "ume.app555@gmail.com",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/umema4/yourbest/issues"
+  },
+  "homepage": "https://github.com/umema4/yourbest#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.2",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.4",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.0.4",
+    "pretty-quick": "^2.0.1",
+    "style-loader": "^1.1.3",
+    "stylelint": "^12.0.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
