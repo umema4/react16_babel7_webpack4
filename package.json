@@ -19,6 +19,7 @@
   },
   "lint-staged": {
     "*.js": [
+      "npm run flowt",
       "npm run eslint"
     ],
     "*.css": "npm run stylelint"
