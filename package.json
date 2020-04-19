@@ -9,7 +9,7 @@
     "eslint": "eslint ./src",
     "eslint:fix": "eslint --fix ./src",
     "stylelint": "stylelint  ./src",
-    "flow": "flow check",
+    "flow": "flow",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
@@ -19,7 +19,6 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run flow",
       "npm run eslint"
     ],
     "*.css": "npm run stylelint"
