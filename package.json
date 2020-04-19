@@ -1,5 +1,5 @@
 {
-  "name": "yourbest",
+  "name": "react16_babel7_webpack4",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "eslint": "eslint ./src",
     "eslint:fix": "eslint --fix ./src",
     "stylelint": "stylelint  ./src",
-    "flow": "flow",
+    "flow": "flow check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
@@ -19,24 +19,24 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run flowt",
       "npm run eslint"
     ],
     "*.css": "npm run stylelint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/umema4/yourbest.git"
+    "url": "git+https://github.com/umema4/react16_babel7_webpack4.git"
   },
   "author": "ume.app555@gmail.com",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/umema4/yourbest/issues"
+    "url": "https://github.com/umema4/react16_babel7_webpack4/issues"
   },
-  "homepage": "https://github.com/umema4/yourbest#readme",
+  "homepage": "https://github.com/umema4/react16_babel7_webpack4#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-flow": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
